@@ -1,0 +1,10 @@
+[Unit]
+Description=WeSearch Service
+
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStart=/home/lemonjia/my-project/wesearch/.venv/bin/python3 /home/lemonjia/my-project/wesearch/wesearch/main.py
+
+[Install]
+WantedBy=default.target
